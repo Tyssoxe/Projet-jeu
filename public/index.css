@@ -1,14 +1,135 @@
-#img {
-  display: block;
-  margin: auto;
-  height: 128px;
-  width: 128px;
-  padding: 2rem;
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
 }
 
-#canvas {
-  display: block;
-  margin: 2rem auto;
-  width: 540px;
-  height: 540px;
+.pokemon1{
+  margin-top:10em;
+  width: 100px;
+  height: 100px;
+  margin-right: 10em;
+  image-orientation: 6.4deg;
+
+
 }
+.pokemon2{
+  margin-bottom:10em;
+  width: 100px;
+  height: 100px;
+}
+.combats{
+  height:20em;
+  display: flex;
+  justify-content: space-around;
+  border: solid;
+  width: 700px;
+  background-image: url(terrain.png);
+}
+
+.myMonster {
+  float: left;
+  width: 100%;
+  position: relative;
+  min-height: 250px;
+}
+  .statbox {
+    float: right;
+    margin-right: 5%;
+    margin-bottom: 50px;
+  }
+
+  .vie{
+    margin-top:8em;
+  }
+  .discution{
+    border: solid;
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    background-color: gray;
+  }
+
+  .button{
+    width: 700px;
+    display: flex;
+    border: solid;
+    flex-direction: column;
+    background-color: gray;
+  
+  }
+
+  .oue{
+    justify-content: center;
+    display: flex;
+
+
+  }
+  .oue2{
+    justify-content: center;
+    display: flex;
+
+
+  }
+  .charge{
+    width: 100px;
+  }
+  .flammeche{
+    width: 110px;
+  }
+  .vive-attaque{
+    width: 100px;
+  }
+
+  .ball{
+    height: 20px;
+    width: 20px;
+  }
+
+  .pokemon{
+    display: flex;
+    flex-direction: row;
+    margin-top:8em;
+  }
+  .pokeball{
+    display: flex;
+    flex-direction: row;
+  }
+
+
+  .none2,.none3,.none5,.none6,.none7,.none8,.ball7{
+    display: none;
+  }
+
+
+  @keyframes image1 {
+    11.1% {
+      transform: none
+    }
+    22.2% {
+      transform: skewX(-12.5deg) skewY(-12.5deg)
+    }
+    33.3% {
+      transform: skewX(6.25deg) skewY(6.25deg)
+    }
+    44.4% {
+      transform: skewX(-3.125deg) skewY(-3.125deg)
+    }
+    55.5% {
+      transform: skewX(1.5625deg) skewY(1.5625deg)
+    }
+    66.6% {
+      transform: skewX(-0.78125deg) skewY(-0.78125deg)
+    }
+    77.7% {
+      transform: skewX(0.390625deg) skewY(0.390625deg)
+    }
+    88.8% {
+      transform: skewX(-0.1953125deg) skewY(-0.1953125deg)
+    }
+    100% {
+      transform: none
+    }
+  }
