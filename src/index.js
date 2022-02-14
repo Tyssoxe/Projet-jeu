@@ -1,3 +1,4 @@
+//Creation des variable//
 let texte = document.querySelector(".Texte");
 let charge = document.querySelector('.charge');
 let flammeche = document.querySelector('.flammeche');
@@ -23,11 +24,12 @@ let image1 = document.querySelector('.pokemon1')
 let image2 = document.querySelector('.pokemon2')
 let i =1;
 let j =1;
+//creation Des class//
 class Pokemon{
   constructor(pdv){
     this.pdv = pdv;
   }
-
+//creation des attaque//
   Charge(personne){
     personne.pdv -= 10;
     vie2.innerHTML = personne.pdv + "/ 100 pdv";
@@ -57,14 +59,14 @@ class Pokemon{
    }
 
 }
-
+//creation des pokemon//
 let salamache = new Pokemon(100);
 let papilusion = new Pokemon(100)
 let dardagnant = new Pokemon(100)
 let bulbizarre = new Pokemon(100);
 let rattata = new Pokemon(100);
 let roucoule = new Pokemon(100);
-
+//creation des event sur les bonton//
 charge.addEventListener("click",function(){
   if(i==1){
     salamache.Charge (bulbizarre);
@@ -140,14 +142,7 @@ LanceFlammes.addEventListener("click",function(){
 function reset() {
     texte.innerHTML="Choisir ton attaque "
 }
-
-function renvoi2(){
-  
-}
-
-
-
-
+//creation fonction  revoie/
 function revoie() {
   if(i==1){
     if (bulbizarre.pdv>0){
@@ -276,6 +271,7 @@ function revoie() {
     }
   }
 }
+//creation des fonction pour masquer les pokemon et les changer //
 function pokemon2(){
   none1.style.display = "none";
   none2.style.display = "block"; 
